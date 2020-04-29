@@ -380,7 +380,7 @@
       value: function resetStyle() {
         for (var i = 0; i < this.boxes.length; i++) {
           var box = this.boxes[i];
-          box.style.visibility = 'visible';
+          box.style.opacity = '0';
         }
         return undefined;
       }
@@ -398,7 +398,7 @@
         if (hidden) {
           this.cacheAnimationName(box);
         }
-        box.style.visibility = hidden ? 'hidden' : 'visible';
+        box.style.opacity = hidden ? '0' : '1';
 
         if (duration) {
           this.vendorSet(box.style, { animationDuration: duration });
