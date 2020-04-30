@@ -1,7 +1,3 @@
-// This is the more WCAG friendly version of wow
-// It does not use visibility:hidden
-// Thank you!
-// https://github.com/mixedmediacreations/WOW/
 (function (global, factory) {
   if (typeof define === "function" && define.amd) {
     define(['module', 'exports'], factory);
