@@ -1,13 +1,13 @@
 {
   "name": "wow",
-  "homepage": "https://github.com/justMoritz/WOW",
+  "homepage": "https://github.com/mixedmediacreations/WOW",
   "authors": [
-    "mmcmoritz <moritz@mailmmc.com>"
+    "mmcmoritz <web@mixedmediacreations.com>"
   ],
   "description": "wow.js, but without visibility:hidden",
   "main": "dist/wow.js",
   "keywords": [
-    "wow-wcag"
+    "wow"
   ],
   "license": "MIT",
   "ignore": [
