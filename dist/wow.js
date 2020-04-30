@@ -1,3 +1,7 @@
+// This is the more WCAG friendly version of wow
+// It does not use visibility:hidden
+// Thank you!
+// https://github.com/mixedmediacreations/WOW/
 (function (global, factory) {
   if (typeof define === "function" && define.amd) {
     define(['module', 'exports'], factory);
@@ -380,7 +384,7 @@
       value: function resetStyle() {
         for (var i = 0; i < this.boxes.length; i++) {
           var box = this.boxes[i];
-          box.style.opacity = '0';
+          box.style.clip = 'rect(0,0,0,0)';
         }
         return undefined;
       }
@@ -398,7 +402,7 @@
         if (hidden) {
           this.cacheAnimationName(box);
         }
-        box.style.opacity = hidden ? '0' : '1';
+        box.style.clip = hidden ? 'rect(0,0,0,0)' : 'auto';
 
         if (duration) {
           this.vendorSet(box.style, { animationDuration: duration });
